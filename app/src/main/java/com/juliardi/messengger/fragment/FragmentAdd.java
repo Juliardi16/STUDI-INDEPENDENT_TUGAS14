@@ -60,6 +60,13 @@ public class FragmentAdd extends Fragment {
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                nJob = noJob.getText().toString();
+                nPic = pic.getText().toString();
+                nDepartement = departement.getText().toString();
+                nCustomer = customer.getText().toString();
+                nKeperluan = keperluan.getText().toString();
+                nNmaDokumen = namaDokumen.getText().toString();
+                nTujuan = tujuan.getText().toString();
                 addData(nJob ,nPic,nDepartement,nCustomer,nKeperluan,nNmaDokumen,nTujuan);
             }
         });
@@ -74,13 +81,13 @@ public class FragmentAdd extends Fragment {
             @Override
             public void onResponse(Call<DataModel> call, Response<DataModel> response) {
                 if(response.isSuccessful()){
-                    Log.d(FragmentAdd.class.getSimpleName(),"");
+                    Log.d(FragmentAdd.class.getSimpleName(),"jk");
                 }
             }
 
             @Override
             public void onFailure(Call<DataModel> call, Throwable t) {
-                Log.e(FragmentAdd.class.getSimpleName(),t.toString());
+                Log.e(FragmentAdd.class.getSimpleName(),t.getLocalizedMessage());
             }
         });
 
