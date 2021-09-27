@@ -81,7 +81,7 @@ public class FragmentAdd extends Fragment {
             @Override
             public void onResponse(Call<DataModel> call, Response<DataModel> response) {
                 if(response.isSuccessful()){
-                    Log.d(FragmentAdd.class.getSimpleName(),"jk");
+                    Log.d(FragmentAdd.class.getSimpleName(),"Berhasil simpan");
                 }
             }
 

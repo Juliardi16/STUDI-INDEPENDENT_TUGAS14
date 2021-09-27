@@ -13,78 +13,141 @@
         android:layout_height="wrap_content"
         android:elevation="10dp"
         app:cardCornerRadius="5dp"
-        app:cardBackgroundColor="@color/purple_200"
+        app:cardBackgroundColor="#f2f2f2"
         android:id="@+id/card_view">
 
         <LinearLayout
-            android:padding="3dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-                <TextView
-                    android:textColor="@color/white"
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No.Job "/>
+
+                    <TextView
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pic "/>
+
+                    <TextView
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Departement "/>
+
+                    <TextView
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Customer"/>
+
+                    <TextView
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Keperluan"/>
+
+                    <TextView
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Dokumen"/>
+
+                    <TextView
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tujuan "/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:id="@+id/tv_no_job"
-                    android:text="No job "/>
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="90"
-                    android:textSize="14sp"
-                    android:text="pic"
-                    android:textColor="@color/white"
-                    android:id="@+id/tv_pic"/>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:id="@+id/tv_no_job"
+                            android:text="No job "/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="10"
-                    android:textSize="14sp"
-                    android:textColor="@color/white"
-                    android:text="Departement"
-                    android:id="@+id/tv_departement"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="90"
+                            android:textSize="14sp"
+                            android:text="pic"
+                            android:textColor="@color/black"
+                            android:id="@+id/tv_pic"/>
 
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="10"
-                    android:textSize="14sp"
-                    android:textColor="@color/white"
-                    android:text="Customer"
-                    android:id="@+id/tv_customer"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="10"
-                android:textSize="14sp"
-                android:textColor="@color/white"
-                android:text="Keperluan"
-                android:id="@+id/tv_Keperluan"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="10"
-                android:textSize="14sp"
-                android:textColor="@color/white"
-                android:text="Nama Dokumen"
-                android:id="@+id/tv_nm_dokumen"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            android:text="Departement"
+                            android:id="@+id/tv_departement"/>
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="10"
-                android:textSize="14sp"
-                android:textColor="@color/white"
-                android:text="Tujuan"
-                android:id="@+id/tv_tujuan"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            android:text="Customer"
+                            android:id="@+id/tv_customer"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:text="Keperluan"
+                        android:id="@+id/tv_Keperluan"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:text="Nama Dokumen"
+                        android:id="@+id/tv_nm_dokumen"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:text="Tujuan"
+                        android:id="@+id/tv_tujuan"/>
+
+                </LinearLayout>
 
         </LinearLayout>
 
