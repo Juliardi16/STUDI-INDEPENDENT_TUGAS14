@@ -2,4 +2,12 @@
     <string name="app_name">Messengger App</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_kapal1">KMTC NAVA SHEVA</string>
+    <string name="title_kapal2">CMA CGM GRUP</string>
+    <string name="title_kapal3">MAERSK LINE</string>
+
+    <string name="kapal1_desc">WE ARE DELIVER YOUR CARGO</string>
+    <string name="kapal2_desc">A Big Ship</string>
+    <string name="kapal3_desc">Save FOR YOUR CARGO </string>
 </resources>

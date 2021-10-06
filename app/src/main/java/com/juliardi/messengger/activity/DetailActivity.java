@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.juliardi.messengger.MainActivity;
 import com.juliardi.messengger.R;
+import com.juliardi.messengger.fragment.FragmentAdd;
 import com.juliardi.messengger.model.DataModel;
 import com.juliardi.messengger.res.ApiClient;
 import com.juliardi.messengger.res.ApiService;
@@ -86,7 +87,14 @@ public class DetailActivity extends AppCompatActivity {
                     public void onResponse(Call<DataModel> call, Response<DataModel> response) {
                         Toast.makeText(DetailActivity.this, "Data berhasil diUpdate", Toast.LENGTH_SHORT).show();
                         finishAffinity();
-                        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+//                        noJob_detail.setText(no_job);
+//                        pic_detail.setText(pic);
+//                        departement_detail.setText(departemen);
+//                        customer_detail.setText(customer);
+//                        keperluan_detail.setText(keperluan);
+//                        nama_dokumen_detail.setText(nama_dokumen);
+//                        tujuan_detail.setText(tujuan);
+                        startActivity(new Intent(getApplicationContext(), FragmentAdd.class));
                     }
 
                     @Override

@@ -15,12 +15,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.juliardi.messengger.R;
 import com.juliardi.messengger.activity.DetailActivity;
+import com.juliardi.messengger.activity.SessionManager;
 import com.juliardi.messengger.model.DataModel;
 
 import java.util.List;
 
 public class DataKerja extends RecyclerView.Adapter<DataKerja.HolderData>{
-
+     SessionManager sessionManager;
+     String username;
     private Context ctx;
     private List<DataModel> lisData;
 
@@ -74,7 +76,7 @@ public class DataKerja extends RecyclerView.Adapter<DataKerja.HolderData>{
 
     public class HolderData extends RecyclerView.ViewHolder{
 
-        TextView noJob,pic,departement,customer,keperluan,namaDokumen,tujuan;
+        TextView noJob,pic,departement,customer,keperluan,namaDokumen,tujuan,tv;
         CardView cardView;
 
         public HolderData(@NonNull View itemView) {

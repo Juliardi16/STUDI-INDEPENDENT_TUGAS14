@@ -10,7 +10,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
-    private static final String BASE_URL="http://192.168.43.243/messenger/";
+    private static final String BASE_URL="http://192.168.43.49/messenger/";
 
     public static ApiService getApiService() {
         HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor();
